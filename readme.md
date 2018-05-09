@@ -1,11 +1,11 @@
 ## Token install
 
 #### laravel passport commands are:
-
+'''
 php artisan migrate
 php artisan passport:install
 php artisan passport:keys
-
+'''
 #### add following line to user model
 
 namespace App;
