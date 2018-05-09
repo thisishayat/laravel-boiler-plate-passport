@@ -1,13 +1,14 @@
 ## Token install
 
 #### laravel passport commands are:
-'''
+```
 php artisan migrate
 php artisan passport:install
 php artisan passport:keys
-'''
-#### add following line to user model
+```
 
+#### add following line to user model
+```
 namespace App;
 
 use Laravel\Passport\HasApiTokens;
@@ -18,10 +19,10 @@ class User extends Authenticatable
 {
     use HasApiTokens, Notifiable;
 }
-
+```
 
 #### ajax example of data
-
+```
 var form = new FormData();
 form.append("email", "h.u.zaman@gmail.com");
 form.append("password", "12345678");
@@ -71,3 +72,4 @@ var settings = {
 $.ajax(settings).done(function (response) {
   console.log(response);
 });
+```
