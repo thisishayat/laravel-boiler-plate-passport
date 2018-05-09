@@ -4,6 +4,7 @@
 
 php artisan migrate
 php artisan passport:install
+php artisan passport:keys
 
 #### add following line to user model
 
